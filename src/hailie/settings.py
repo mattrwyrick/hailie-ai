@@ -7,18 +7,23 @@ from pathlib import Path
 OLLAMA_URL = "http://localhost:11434/api/chat"
 OLLAMA_MODEL_NAME = "llama3"
 
-
 # Main dirs and file paths
 PROJ_DIR = Path(os.path.abspath(__file__)).parent
 
 DOCS_DIR = os.path.join(PROJ_DIR, "docs")
-DOCS_SUMMARY_PATH = os.path.join(DOCS_DIR, "summary.csv")
+DOCS_CATEGORIES = ["blockchain", "finance", "machine_learning", "statistics", "misc"]
 
 RAG_DIR = os.path.join(PROJ_DIR, "rag")
-RAG_EMBEDDING_PATH = os.path.join(RAG_DIR, "embedding.csv")
+EMBEDDING_PATH = os.path.join(RAG_DIR, "embedding.csv")
+
+
+OLLAMA_PATH = os.path.join(PROJ_DIR, "ollama")
+SUMMARY_PATH = os.path.join(OLLAMA_PATH, "summary.csv")
 
 
 # Document dirs and paths
+DOCS_DUMP_DIR = os.path.join(DOCS_DIR, "__dump__")
+
 DOCS_BLOCKCHAIN_DIR = os.path.join(DOCS_DIR, "blockchain")
 DOCS_BLOCKCHAIN_QUEUE_DIR = os.path.join(DOCS_BLOCKCHAIN_DIR, "queue")
 DOCS_BLOCKCHAIN_COMPLETED_DIR = os.path.join(DOCS_BLOCKCHAIN_DIR, "completed")

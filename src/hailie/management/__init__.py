@@ -1,0 +1,56 @@
+
+
+from hailie.settings import (
+
+    DOCS_BLOCKCHAIN_QUEUE_DIR,
+    DOCS_BLOCKCHAIN_COMPLETED_DIR,
+    DOCS_BLOCKCHAIN_REFERENCE_DIR,
+
+    DOCS_FINANCE_QUEUE_DIR,
+    DOCS_FINANCE_COMPLETED_DIR,
+    DOCS_FINANCE_REFERENCE_DIR,
+
+    DOCS_MACHINE_LEARNING_QUEUE_DIR,
+    DOCS_MACHINE_LEARNING_COMPLETED_DIR,
+    DOCS_MACHINE_LEARNING_REFERENCE_DIR,
+
+    DOCS_STATISTICS_QUEUE_DIR,
+    DOCS_STATISTICS_REFERENCE_DIR,
+    DOCS_STATISTICS_COMPLETED_DIR,
+
+    DOCS_MISC_QUEUE_DIR,
+    DOCS_MISC_COMPLETED_DIR,
+    DOCS_MISC_REFERENCE_DIR
+
+)
+
+
+DIR_MAP = {
+    "blockchain": {
+        "queue": DOCS_BLOCKCHAIN_QUEUE_DIR,
+        "completed": DOCS_BLOCKCHAIN_COMPLETED_DIR,
+        "reference": DOCS_BLOCKCHAIN_REFERENCE_DIR
+    },
+    "finance": {
+        "queue": DOCS_FINANCE_QUEUE_DIR,
+        "completed": DOCS_FINANCE_COMPLETED_DIR,
+        "reference": DOCS_FINANCE_REFERENCE_DIR
+    },
+    "machine_learning": {
+        "queue": DOCS_MACHINE_LEARNING_QUEUE_DIR,
+        "completed": DOCS_MACHINE_LEARNING_COMPLETED_DIR,
+        "reference": DOCS_MACHINE_LEARNING_REFERENCE_DIR
+    },
+    "statistics": {
+        "queue": DOCS_STATISTICS_QUEUE_DIR,
+        "completed": DOCS_STATISTICS_COMPLETED_DIR,
+        "reference": DOCS_STATISTICS_REFERENCE_DIR
+    },
+    "misc": {
+        "queue": DOCS_MISC_QUEUE_DIR,
+        "completed": DOCS_MISC_COMPLETED_DIR,
+        "reference": DOCS_MISC_REFERENCE_DIR
+    }
+}
+
+
