@@ -1,0 +1,5 @@
+numpy
+pandas
+requests
+#pypdf3
+#sentence-transformers
